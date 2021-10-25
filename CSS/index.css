@@ -5,19 +5,27 @@
     text-decoration: none;
     font-family: Montserrat, sans-serif;
 }
+body{
+    width: 100%;
+    height: 100vh;
+}
 header{
+    display: flex;
     position: absolute;
     top: 5px;
     width: 100%;
     height: 90px;
+    opacity: 0.5;
 }
 nav {
-    position: relative;
-    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    top: 28px;
+    width: 900px;
     left: 350px;
-    width: 990px;
     height: 40px;
-    padding: 10px;
 }
 nav a {
     position: relative;
@@ -32,8 +40,8 @@ nav a.home{
     color:rgb(211, 151, 72);
 }
 nav a.contact-ancor{
-    height: 50px;
-    width: 50px;
+    display: flex;
+    align-items: center;
     border-radius: 20px;
     background-color:rgb(211, 151, 72);
     color: black;
@@ -42,12 +50,16 @@ nav a.contact-ancor:hover{
     color: white;
 }
 .logo{
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 50px;
     bottom: 480px;
     left: 100px;
+    top: 25px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section{
     position: absolute;
@@ -74,6 +86,9 @@ section .title{
     color: white;
 }
 section .sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 80px;
     text-align: center;
     color: white;
@@ -81,7 +96,7 @@ section .sub-title{
 .bigode{
     position: absolute;
     top:345px;
-    left: 625px;
+    left: 600px;
     object-fit: cover;
 }
 .texto{
@@ -98,14 +113,14 @@ section .sub-title{
 }
 .btn-demo{
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     width: 100px;
     height: 40px;
     background-color:rgb(211, 151, 72);
     color:rgb(0, 0, 0);
     border: 0;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 800;
 }
 .btn-demo:hover{
     transition: 0.5s;
@@ -119,7 +134,7 @@ section .sub-title{
 }
 .box-border-right{
     position: relative;
-    bottom: 90px;
+    bottom: 70px;
     left: 702px;
     height: 30px;
     width: 30px;
@@ -128,7 +143,7 @@ section .sub-title{
 }
 .box-border-left{
     position: relative;
-    bottom: 90px;
+    bottom: 70px;
     left: 610px;
     height: 30px;
     width: 30px;
@@ -137,7 +152,6 @@ section .sub-title{
 }
 .sec-info{
     position: relative;
-    top: 10px;
     padding: 15px;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -218,8 +232,4 @@ footer{
     height: 80px;
     background-color: black;
 
-}
-
-@media screen {
-    
 }
